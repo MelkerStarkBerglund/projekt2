@@ -12,7 +12,7 @@ nav {
     background-color:white;
     font-family: sans-serif;
     border-bottom: black solid 7px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .burger {
@@ -41,7 +41,7 @@ nav {
 }
 
 .navLinks a {
-    color: white;
+    color: black;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -71,4 +71,22 @@ nav {
 
 .navActive {
     transform: translateY(100vh);
+}
+
+.textontop {
+    justify-content: center;
+}
+
+.oslo {
+    display: flex;
+    width: 80vw;
+    height: 75vh;
+    z-index: 2;
+}
+
+.oslobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80wh;
 }
