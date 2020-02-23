@@ -1,3 +1,16 @@
+.oslooperahus { grid-area: main1; }
+.footer { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'nav'
+    'main1'
+    'main2'
+    'main3'
+    'footer'
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,11 +21,11 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 10vh;
-    background-color:white;
+    height: 13vh;
+    background-color: rgb(230, 229, 235);
     font-family: sans-serif;
-    border-bottom: black solid 7px;
-    z-index: 1;
+    border-bottom: black solid 6px;
+    z-index: -2;
 }
 
 .burger {
@@ -28,12 +41,12 @@ nav {
     right: 0px;
     height: 90vh;
     top: -90vh;
-    background-color: white;
+    background-color: rgb(230, 229, 235);
     align-items: center;
     width: 20%;
     transition: all 1s;
     z-index: -1;
-    border-left: black solid 7px;
+    border-left: black solid 6px;
 }
 
 .navLinks li {
@@ -73,20 +86,53 @@ nav {
     transform: translateY(100vh);
 }
 
-.textontop {
-    justify-content: center;
+.rubrik {
+    text-align: left;
+    font-size: 30px;
+    font-family: sans-serif;
 }
 
-.oslo {
-    display: flex;
-    width: 80vw;
-    height: 75vh;
-    z-index: 2;
+.oslooperahus {
+    background-image: url('/img/operaen-2.jpg');
+    height: 800px; 
+    width: 100%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    text-decoration: none;
+    border: 3px solid white;
+    
 }
 
-.oslobox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80wh;
+.textoperahus {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    font-family: Clarkson, Helvetica, sans-serif;  
+    font-size: 30px;
+    width: 350px;
+    height: 45px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    color: white;
 }
+
+.textinfooperahus {
+    position: absolute; 
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 10px;
+    width: 320px;
+    height: 25px;
+    font-style: italic;
+    color: white;
+}
+
+
