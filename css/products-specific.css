@@ -1,0 +1,266 @@
+@media only screen and (max-width: 600px) {
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'nav'
+    'main'
+    'footer'
+ }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    background-color:white;
+    border-bottom: black solid 7px;
+    z-index: 2;
+}
+
+.burger {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: black;
+    align-items: center;
+    width: 40%;
+    transition: all 1s;
+    z-index: 1;
+    border-left: black solid 7px;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.3s;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navActive {
+    transform: translateY(100vh);
+}
+
+    
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 5%;
+    background-color: rgb(202, 233, 243);
+}
+
+.box-img {
+    width: 90vw;
+    height: auto;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.img-box {
+    width: 90vw;
+    height: auto;
+}
+
+.box-text {
+    font-size: 14px;
+    background-color: white;
+    padding: 5%;
+}
+
+.box-list {
+    padding-top: 2vh;
+    padding: 5%;
+    font-size: 17;
+}
+
+.button-container {
+    padding: 5%;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 2vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 70vw;
+    border-radius: 5px;
+}
+
+  .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+  
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+
+}
+
+.wrapper-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: blueviolet;
+    padding-top: 2vh;
+    text-align: center;    
+    border-top: black solid 4px;
+}
+
+.titel {
+    font-size: 21px;
+}
+
+.info {
+    font-size: 13px;
+    padding-top: 1vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-bottom: 2vh;
+}
+
+@media only screen and (min-width: 768px) {
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5%;
+    grid-gap: 3%;   
+}
+
+.box-img {
+    padding-bottom: 80vh;
+    width: 45vw;
+    height: auto;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.img-box {
+    width: 45vw;
+    height: auto;
+}
+
+.box-text {
+    height: 70vh;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 8%;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.box-list {
+    font-size: 14px;
+    margin: 5vh;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 35vw;
+    border-radius: 5px;
+}
+
+  .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+  
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+
+}
+
+.wrapper-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: blueviolet;
+    text-align: center;
+    padding-top: 2vh;
+    border-top: black solid 5px;
+
+}
+
+.titel {
+    font-size: 25px;
+}
+
+.info {
+    font-size: 15px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+}
+
+.box-footer {
+    height: 13vh;
+}
+
+}
+

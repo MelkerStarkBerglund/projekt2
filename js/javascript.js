@@ -8,3 +8,4 @@ document.querySelector('.burger').classList.toggle('toggle')
 }
 
 document.querySelector('.burger').addEventListener('click', toggleMeny)
+
