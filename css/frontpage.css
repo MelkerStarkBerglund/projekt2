@@ -216,8 +216,7 @@ nav {
         background-color: blueviolet;
         text-align: center;
         padding-top: 2vh;
-        border-top: black solid 5px;
-    
+        border-top: black solid 4px;
     }
     
     .titel {
@@ -231,7 +230,11 @@ nav {
         padding-top: 1vh;
     }
     
-    .box-footer {
-        height: 13vh;
+main {
+    height: auto;
+}
+
+    footer {
+        height: auto;
     }
 }

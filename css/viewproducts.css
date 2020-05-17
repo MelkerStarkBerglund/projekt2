@@ -86,9 +86,13 @@ nav {
 }
 
 main {
-    height: 88vh;
+    height: 95vh;
     background-color: rgb(240, 235, 226);
 
+}
+
+footer {
+    height: auto;
 }
 
 .wrapper {
@@ -142,7 +146,6 @@ main {
     padding: 5%;
     text-align: left;
     font-size: 15px;
-    
 }
     
 .box {
@@ -158,9 +161,8 @@ main {
  }
 
  main {
-    height: 135vh;
+    height: auto;
     background-color: rgb(240, 235, 226);
-
 }
 
 .wrapper-footer {
@@ -169,8 +171,8 @@ main {
     background-color: blueviolet;
     text-align: center;
     padding-top: 2vh;
-    border-top: black solid 5px;
-
+    border-top: black solid 4px;
+    height: auto;
 }
 
 .titel {
@@ -185,7 +187,7 @@ main {
 }
 
 .box-footer {
-    height: 13vh;
+    height: auto;
 }
 
 }
